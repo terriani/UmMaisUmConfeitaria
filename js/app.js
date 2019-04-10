@@ -15,8 +15,10 @@ doc.ready(function(){
     $(".button-collapse").sideNav();
     $(".parallax").parallax();
     $(".sidenav").sideNav();
+    $(".materialboxed").materialbox();
     main.css("display", "none");
     footer.css("display", "none");
+
   });
 
   img_intro.css("opacity", 1);
@@ -54,6 +56,10 @@ setTimeout(function(){
   $(".img-head").css("opacity", 1);
   $(".img-head").css("transition", "2s ease-in");
   $(".img-head").css("transform", "scale(1)");
+  $(".title").css("left", 0);
+  $(".title").css("transition", ".5s ease-out");
+  $(".sub-title").css("right", 0);
+  $(".sub-title").css("transition", "1.2s ease-out");
 }, 6200);
 
 doc.scroll(function(){

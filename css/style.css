@@ -89,10 +89,14 @@ body{
     font-size: 50pt;
     text-align: center;
     font-family: 'Fascinate Inline', cursive;
+    left: -100%;
+    position: relative;
 }
 
-.title>.sub-title{
+.sub-title{
     font-size: 38pt;
+    right: 100%;
+    position: relative;
 }
 
 main, footer{
@@ -107,9 +111,12 @@ main, footer{
 }
 
 .img_logo{
-    height: 85px;
-    width: 85px;
+    height: 95px;
+    width: 95px;
     transform: rotate(20deg);
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;  
 }
 
 ul li a{
@@ -138,6 +145,8 @@ ul li a{
 
 footer{
     background-image: url("../img/beans-1737906_640.png") !important;
+    opacity: 0 ;
+    transition: 1s ease-in-out;
 }
 
 .img-about{
@@ -171,18 +180,27 @@ h4{
 .love-msg{
     font-family: 'Fascinate Inline', cursive;
     text-align: center;
-    font-size: 12pt;
+    font-size: 16pt;
+    text-shadow: 1px 1px 3px #2196f3;
 }
 
 .text-footer{
     font-family:'Fascinate Inline', cursive;
-    font-size: 35pt;
-    text-shadow: 1px 1px 3px #e91e63;
+    font-size: 25pt;
+    text-shadow: 2px 2px 6px #2196f3;
 }
 
 .text-footer-sub{
     font-family:'Fascinate Inline', cursive;
-    font-size: 20pt;
+    font-size: 15pt;
+    text-shadow: 1px 1px 4px #2196f3;
+}
+
+.img-galery{
+    height: auto;
+    width: 200px ;
+    border-radius: 5px;
+    margin: 10px !important;
 }
 
 
@@ -217,4 +235,15 @@ h4{
     .text-footer-sub{
         font-size: 13pt;
     }
+    .love-msg{
+        font-size: 12pt;
+    }
+
+    .img-galery{
+        height: auto;
+        width: 90vw !important;
+        margin: 20px auto !important;
+    }
+
+
 }
