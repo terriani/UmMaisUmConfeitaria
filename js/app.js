@@ -51,9 +51,9 @@ doc.ready(function(){
   },6000);
 
 doc.scroll(function(){
-  if ($(window).scrollY > $("#about").offset().top - window.innerHeight / 2) {
-    $(".head").css("opacity", 0);
-    $(".head").css("left", "-100px");
-    $(".head").css("transition", ".5s");
+  if (window.scrollY > $("#about").offset().top - window.innerHeight / 2) {
+    $(".img-about").css("opacity", 1);
+    $(".img-about").css("transition", "1.5s ease-in-out");
+    $(".img-about").css("transform", "rotate(-35deg)");
   }
 })

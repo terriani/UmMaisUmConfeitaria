@@ -138,8 +138,10 @@ ul li a{
     height: 260px;
     width: 260px;
     opacity: .9;
-    transform: rotate(-35deg); 
+    transform: rotate(-15deg); 
     margin-bottom: 100px;
+    opacity: .2;
+    transition: 1.5s;
 }
 
 .history{
