@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar-fixed{
+    z-index: 1000;
+}
+
+.intro{
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden !important;
+}
+
+.img_intro{
+    height: 40vh;
+    width: auto;
+    opacity: 0;
+    transition: 2.5s;
+    transform: scale(.6);
+    top: 20vh;
+    position: relative;
+    z-index: 2;
+}
+
+.text-intro{
+    opacity: 0;
+    transform: scale(0) !important;
+    transition: 1s ease-in;
+    position: relative;
+    top: 25vh;
+    z-index: 2;
+    font-size: 150%;
+}
+
+.text-intro2{
+    opacity: 0;
+    transform: scale(0) !important;
+    transition: 2s ease-in-out;
+    position: relative;
+    top: 26vh;
+    z-index: 2;
+}
+
+
+.img-donut1, .img-donut2, .img-donut3{
+    height: 40vh;
+    width: auto;
+    opacity: 1;
+    z-index: 1;
+} 
+
+.img-donut1{
+    float: left;
+    position: relative;
+    left: -100%;
+    transition: 8s ease-out;
+    opacity: .2;
+}
+
+.img-donut2{
+    float: right;
+    position: relative;
+    right: -100%;
+    transition: 5s linear;
+    opacity: .8;
+    top: 27vh;
+}
+
+.img-donut3{
+    float: left;
+    position: relative;
+    left: -100%;
+    transition: 5s ease-in;
+    opacity: .6;
+}
+
+.title{
+    font-size: 50pt;
+    text-align: center;
+    font-family: 'Fascinate Inline', cursive;
+}
+
+.title>.sub-title{
+    font-size: 38pt;
+}
+
+main, footer{
+    opacity: 0;
+    transition: 2s ease-out;
+}
+
+.logo{
+    font-family: 'Fascinate Inline', cursive;
+    font-size: 20pt;
+    text-align: center !important    
+}
+
+.img_logo{
+    height: 85px;
+    width: 85px;
+    transform: rotate(20deg);
+}
+
+ul li a{
+    color: #e91e63 !important;
+}
+
+
+.img-head{
+    background-image: url("../img/donut2.png");
+    background-size: cover;
+    float: right;
+    height: 200px;
+    width: 200px;
+    opacity: .7;    
+}
+
+.head{
+    height: 15vh;
+    
+}
+
+.about{
+      text-align: left;
+}
+
+.img-about{
+    background-image: url("../img/cupcake-4064405_640.png");
+    background-size: cover;
+    float: left;
+    height: 260px;
+    width: 260px;
+    opacity: .9;
+    transform: rotate(-35deg); 
+    margin-bottom: 100px;
+}
+
+.history{
+    text-align: right;
+}
+
+h4{
+    font-family: 
+    'Fascinate Inline', cursive;
+    color: #2196f3;
+}
+
+
+@media (max-width: 599px) {
+    .img_intro{
+        top: -60vh;
+    }
+    .text-intro{
+        top: -57vh;
+    }
+    .text-intro2{
+        top: -56vh;
+    }
+
+    .title{
+        font-size: 30pt;
+    }
+
+    .title>.sub-title{
+        font-size: 28pt;
+    }
+
+    .img-about{
+        height: 130px;
+        width: 130px;
+    }
+
+}
