@@ -12,6 +12,10 @@ body{
     z-index: 1000;
 }
 
+.drag-target{
+    width: 50px !important;
+}
+
 .intro{
     max-height: 100vh;
     max-width: 100vw;
