@@ -50,10 +50,16 @@ doc.ready(function(){
     footer.css("opacity", 1);
   },6000);
 
+setTimeout(function(){
+  $(".img-head").css("opacity", 1);
+  $(".img-head").css("transition", "2s ease-in");
+  $(".img-head").css("transform", "scale(1)");
+}, 6200);
+
 doc.scroll(function(){
   if (window.scrollY > $("#about").offset().top - window.innerHeight / 2) {
     $(".img-about").css("opacity", 1);
     $(".img-about").css("transition", "1.5s ease-in-out");
-    $(".img-about").css("transform", "rotate(-35deg)");
+    $(".img-about").css("transform", "rotate(-30deg)");
   }
-})
+});
