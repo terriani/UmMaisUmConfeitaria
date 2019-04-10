@@ -41,7 +41,6 @@ doc.ready(function(){
   setTimeout(function(){
     intro.css("opacity", 0);
     intro.css("transition", "2s ease-out");
-    intro.css("transform", "scale(0.9)");
   },4300)
   setTimeout(function(){
     intro.css("display", "none");
