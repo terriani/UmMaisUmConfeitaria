@@ -155,6 +155,7 @@ footer{
     background-image: url("../img/beans-1737906_640.png") !important;
     opacity: 0 ;
     transition: 1s ease-in-out;
+    z-index: -1;
 }
 
 .img-about{
@@ -186,7 +187,7 @@ p{
 }
 
 .pug-img{
-    height: 150px;
+    height: 250px;
     width: auto;
 }
 
@@ -210,8 +211,8 @@ p{
 }
 
 .img-galery{
-    height: auto;
-    width: 200px ;
+    height: 300px;
+    width: 300px ;
     border-radius: 5px;
     margin: 10px !important;
 }
@@ -224,6 +225,16 @@ p{
     z-index: 100;
 }
 
+.img-d3{
+    height: 500px;
+    width: auto;
+    float: right !important;
+    position: static;
+    margin-bottom: -40vh;
+    margin-top: -300px;
+    margin-right: -15vw;
+    z-index: 1000 !important;
+}
 
 @media (max-width: 599px) {
     .img_intro{
@@ -270,5 +281,12 @@ p{
         font-size: 1.8rem;
     }
 
+    .img-d3{
+        display: none;
+    }
+
+    .pug-img{
+        height: 150px;
+    }
 
 }
