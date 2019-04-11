@@ -18,6 +18,8 @@ doc.ready(function(){
     $(".materialboxed").materialbox();
     main.css("display", "none");
     footer.css("display", "none");
+    $(".modal").modal();
+    $(".scrollspy").scrollSpy();
 
   });
 
@@ -30,6 +32,8 @@ doc.ready(function(){
   img_d1.css("left", "100%");
   img_d2.css("right", "100%");
   img_d3.css("left", "100%");
+  $(".btn-msg").css("opacity", 0);
+  $(".btn-msg").css("display", "none");
 
   setTimeout(function(){
     img_d1.css("opacity", "1");
@@ -59,7 +63,10 @@ setTimeout(function(){
   $(".title").css("left", 0);
   $(".title").css("transition", ".5s ease-out");
   $(".sub-title").css("right", 0);
-  $(".sub-title").css("transition", "1.2s ease-out");
+  $(".sub-title").css("transition", "3.2s ease-out");
+  $(".img_logo").css("border-bottom", "3px solid #e91e63");
+  $(".btn-msg").css("display", "block");
+  $(".btn-msg").css("opacity", 1);
 }, 6200);
 
 doc.scroll(function(){
