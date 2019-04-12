@@ -75,7 +75,7 @@ doc.scroll(function(){
     $(".img-about").css("transition", "1.5s ease-in-out");
     $(".img-about").css("transform", "rotate(-30deg)");
   }
-  if (window.scrollY > $("#galery").offset().top) {
+  if (window.scrollY > $("#galery").offset().top * 2) {
       $(".img-d3").css("opacity", 1);
       $(".img-d3").css("transform", "rotate(-60deg)");
       
